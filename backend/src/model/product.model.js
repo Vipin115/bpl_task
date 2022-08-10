@@ -4,8 +4,8 @@ const productSchema = new mongoose.Schema(
     {
        
         name: { type: String, required: true },
-        quantity: { type: String, required: true },
-        amount: {type: String,required: true },
+        quantity: { type: Number, required: true },
+        amount: {type: Number,required: true },
     },
     {
         versionKey: false,

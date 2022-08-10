@@ -7,7 +7,7 @@ const connect = require("./configs/db");
 
 
 const productController = require("./controller/product.controller");
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 3500
 
 
 
@@ -18,6 +18,7 @@ app.use(express.json())
 
 
 app.use("/products", productController);
+app.use("", productController);
 
 
 app.listen(port, async (req, res) => {
@@ -26,6 +27,6 @@ app.listen(port, async (req, res) => {
     } catch (e) {
         console.error(e.message)
     }
-    console.log("listening on port 4000")
+    console.log("listening on port 3500")
 })
 
