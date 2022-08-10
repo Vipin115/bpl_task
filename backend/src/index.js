@@ -19,6 +19,7 @@ app.use(express.json())
 
 app.use("/products", productController);
 app.use("", productController);
+app.use("", productController);
 
 
 app.listen(port, async (req, res) => {
