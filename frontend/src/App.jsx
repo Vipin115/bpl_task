@@ -12,21 +12,21 @@ function App() {
 
 
   useEffect(()=>{
-    axios.get("http://localhost:3500/products").then((res)=>{
+    axios.get("https://bpltask.herokuapp.com/products").then((res)=>{
       console.log(res.data)
       setProducts(res.data)
     })
   },[])
 
   useEffect(()=>{
-    axios.get("http://localhost:3500/mostsell").then((res)=>{
+    axios.get("https://bpltask.herokuapp.com/mostsell").then((res)=>{
       console.log(res.data)
       setMostsell(res.data)
     })
   },[])
 
   useEffect(()=>{
-    axios.get("http://localhost:3500/todaysrevenue").then((res)=>{
+    axios.get("https://bpltask.herokuapp.com/todaysrevenue").then((res)=>{
       console.log(res.data)
       setRevenue(res.data)
     })
