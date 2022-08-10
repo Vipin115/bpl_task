@@ -37,14 +37,14 @@ function App() {
       <h1>Product sales</h1>
    <table>
         
-          <thead>
+          
     <tr>
       <th>Name</th>
       <th>Quantity</th>
       <th>Amount</th>
     </tr>
-          </thead>
-         <tbody>
+          
+         
           {products.map((e) => {
              
 
@@ -57,9 +57,7 @@ function App() {
             
             
           })}
-         </tbody>
-         
-          
+    
       </table>
       <br /><br /><br />
       <h1>Most sell products</h1>
@@ -91,7 +89,7 @@ function App() {
       </table>
 
       <br /><br /><br />
-      <h1>Todays Sales Revenue Amount: {revenue}</h1>
+      <h1 className='revenue'>Todays Sales Revenue Amount: {revenue}</h1>
 
     </div>
   );

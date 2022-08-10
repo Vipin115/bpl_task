@@ -6,6 +6,18 @@
   height: 40vmin;
   pointer-events: none;
 }
+table,th,td{
+  border: 1px solid black;
+ 
+}
+table{
+  margin: auto;
+  width: 50%;
+  border-collapse: collapse;
+}
+td{
+  text-align: center;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
